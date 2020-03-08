@@ -54,8 +54,8 @@ export const getFontSize = () => {
     case 896:
     return {
       imageCard: {
-        width: 340 - 3,
-        height: 118 - 3
+        width: '100%',
+        height: '100%'
       },
       imageList: {
         marginLeft: 17,

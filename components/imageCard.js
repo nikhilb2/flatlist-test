@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, Platform } from 'react-native'
 import { getFontSize } from '../src/utility'
 
 
@@ -7,15 +7,18 @@ import { getFontSize } from '../src/utility'
 const ImageCard = (props) => {
   const { image } = props
   return(
-    <View style={styles.imageHolder} shadow>
-      <Image source={image} style={styles.image} resizeMode={"cover"} />
+    <View style={styles.imageHolder}>
+      <Image source={image} style={styles.image} resizeMode={ "cover"} />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   image: {
-    ...getFontSize().imageCard
+    ...getFontSize().imageCard,
+    marginRight: 'auto',
+    marginLeft: 'auto',
+    width: '100%'
   },
   imageHolder: {
     ...getFontSize().imageHolder,
