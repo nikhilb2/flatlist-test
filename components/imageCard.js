@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet, Platform } from 'react-native'
-import { getFontSize } from '../src/utility'
+import { View, Image, StyleSheet } from 'react-native'
+import { getStyling } from '../src/utility'
 
 
 
@@ -15,16 +15,13 @@ const ImageCard = (props) => {
 
 const styles = StyleSheet.create({
   image: {
-    ...getFontSize().imageCard,
+    ...getStyling().imageCard,
     marginRight: 'auto',
     marginLeft: 'auto',
     width: '100%'
   },
   imageHolder: {
-    ...getFontSize().imageHolder,
-    borderColor: '#D8D8D8',
-    borderWidth: 1.5
-
+    ...getStyling().imageHolder,
   }
 })
 

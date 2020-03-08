@@ -2,7 +2,7 @@ import { Dimensions } from 'react-native'
 const { height } = Dimensions.get('window')
 import theme from './theme'
 
-export const getFontSize = () => {
+export const getStyling = () => {
   console.log(height);
   switch (height) {
     case 667:
@@ -17,7 +17,9 @@ export const getFontSize = () => {
           marginTop: 19
         },
         imageHolder: {
-          marginBottom: 12
+          marginBottom: 12,
+          borderColor: '#D8D8D8',
+          borderWidth: 1.5
         },
         headerText: {
           fontFamily: 'heebo-bold',
@@ -26,6 +28,9 @@ export const getFontSize = () => {
           letterSpacing: 0.41,
           marginLeft: 16.5,
           marginBottom: 3
+        },
+        headerContainer: {
+          height: 95.5
         }
       }
     case 736:
@@ -40,7 +45,9 @@ export const getFontSize = () => {
         marginTop: 19
       },
       imageHolder: {
-        marginBottom: 12
+        marginBottom: 12,
+        borderColor: '#D8D8D8',
+        borderWidth: 1.5
       },
       headerText: {
         fontFamily: 'heebo-bold',
@@ -49,6 +56,9 @@ export const getFontSize = () => {
         letterSpacing: 0.41,
         marginLeft: 16.5,
         marginBottom: 3
+      },
+      headerContainer: {
+        height: 95.5
       }
     }
     case 896:
@@ -63,7 +73,9 @@ export const getFontSize = () => {
         marginTop: 19
       },
       imageHolder: {
-        marginBottom: 12
+        marginBottom: 12,
+        borderColor: '#D8D8D8',
+        borderWidth: 1.5
       },
       headerText: {
         fontFamily: 'heebo-bold',
@@ -72,6 +84,9 @@ export const getFontSize = () => {
         letterSpacing: 0.41,
         marginLeft: 16.5,
         marginBottom: 3
+      },
+      headerContainer: {
+        height: 115.5
       }
     }
     case 812:
@@ -86,7 +101,9 @@ export const getFontSize = () => {
         marginTop: 19
       },
       imageHolder: {
-        marginBottom: 12
+        marginBottom: 12,
+        borderColor: '#D8D8D8',
+        borderWidth: 1.5
       },
       headerText: {
         fontFamily: 'heebo-bold',
@@ -95,6 +112,9 @@ export const getFontSize = () => {
         letterSpacing: 0.41,
         marginLeft: 16.5,
         marginBottom: 3
+      },
+      headerContainer: {
+        height: 115.5
       }
     }
     default:
@@ -109,7 +129,9 @@ export const getFontSize = () => {
         marginTop: 19
       },
       imageHolder: {
-        marginBottom: 12
+        marginBottom: 12,
+        borderColor: '#D8D8D8',
+        borderWidth: 1.5
       },
       headerText: {
         fontFamily: 'heebo-bold',
@@ -118,6 +140,9 @@ export const getFontSize = () => {
         letterSpacing: 0.41,
         marginLeft: 16.5,
         marginBottom: 3
+      },
+      headerContainer: {
+        height: 95.5
       }
     }
   }

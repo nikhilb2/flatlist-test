@@ -1,6 +1,9 @@
 {
   "expo": {
     "name": "testScreen",
+    "android": {
+      "package": "com.testscreen.app"
+    },
     "slug": "test-screen",
     "privacy": "public",
     "sdkVersion": "36.0.0",

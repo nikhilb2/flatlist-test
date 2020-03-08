@@ -1,10 +1,7 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Image } from 'react-native'
-import { FontAwesome } from '@expo/vector-icons'
+import { View, Text, StyleSheet } from 'react-native'
 import theme from '../src/theme'
-import { getFontSize } from '../src/utility'
-const { height } = Dimensions.get('window')
-
+import { getStyling } from '../src/utility'
 
 
 const Header = () => {
@@ -12,9 +9,7 @@ const Header = () => {
   return(
     <React.Fragment>
       <View style={styles.container}>
-
         <Text style={styles.headerText}>Pictures</Text>
-
       </View>
     </React.Fragment>
 
@@ -23,9 +18,8 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   container: {
-    //marginTop: -24.4,
     width: '100%',
-    height: height === 812 ? 115-19.5 + 20 : 115-19.5,
+    ...getStyling().headerContainer,
     position: 'relative',
     borderColor: '#707070',
     borderBottomWidth: .5,
@@ -35,7 +29,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   headerText: {
-    ...getFontSize().headerText
+    ...getStyling().headerText
   }
 })
 
